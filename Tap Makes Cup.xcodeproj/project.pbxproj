@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B83AC1972979BD98000D3B19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83AC1962979BD98000D3B19 /* AppDelegate.swift */; };
 		B83AC1992979BD98000D3B19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83AC1982979BD98000D3B19 /* ContentView.swift */; };
-		B83AC19B2979BD98000D3B19 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B83AC19A2979BD98000D3B19 /* Experience.rcproject */; };
 		B83AC19D2979BD9A000D3B19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83AC19C2979BD9A000D3B19 /* Assets.xcassets */; };
 		B83AC1A02979BD9A000D3B19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83AC19F2979BD9A000D3B19 /* Preview Assets.xcassets */; };
+		B83AC1A7297A3DD7000D3B19 /* TapMakesCupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83AC1A6297A3DD7000D3B19 /* TapMakesCupApp.swift */; };
+		B83AC1AC297A41C0000D3B19 /* cup_saucer_set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B83AC1AB297A41C0000D3B19 /* cup_saucer_set.usdz */; };
+		B83AC1AE297A41D4000D3B19 /* CupEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83AC1AD297A41D4000D3B19 /* CupEntity.swift */; };
+		B83AC1B0297A45A2000D3B19 /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83AC1AF297A45A2000D3B19 /* ResourceLoader.swift */; };
+		B8B09B722995EB6500C65C9D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B09B712995EB6500C65C9D /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B83AC1932979BD98000D3B19 /* Tap Makes Cup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap Makes Cup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B83AC1962979BD98000D3B19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B83AC1982979BD98000D3B19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B83AC19A2979BD98000D3B19 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		B83AC19C2979BD9A000D3B19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B83AC19F2979BD9A000D3B19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B83AC1A6297A3DD7000D3B19 /* TapMakesCupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapMakesCupApp.swift; sourceTree = "<group>"; };
+		B83AC1AB297A41C0000D3B19 /* cup_saucer_set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cup_saucer_set.usdz; sourceTree = "<group>"; };
+		B83AC1AD297A41D4000D3B19 /* CupEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupEntity.swift; sourceTree = "<group>"; };
+		B83AC1AF297A45A2000D3B19 /* ResourceLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoader.swift; sourceTree = "<group>"; };
+		B8B09B712995EB6500C65C9D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +59,9 @@
 		B83AC1952979BD98000D3B19 /* Tap Makes Cup */ = {
 			isa = PBXGroup;
 			children = (
-				B83AC1962979BD98000D3B19 /* AppDelegate.swift */,
-				B83AC1982979BD98000D3B19 /* ContentView.swift */,
-				B83AC19A2979BD98000D3B19 /* Experience.rcproject */,
+				B83AC1A9297A4186000D3B19 /* Entities */,
+				B83AC1A8297A417F000D3B19 /* Resources */,
+				B83AC1AA297A41A8000D3B19 /* UI */,
 				B83AC19C2979BD9A000D3B19 /* Assets.xcassets */,
 				B83AC19E2979BD9A000D3B19 /* Preview Content */,
 			);
@@ -68,6 +74,33 @@
 				B83AC19F2979BD9A000D3B19 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B83AC1A8297A417F000D3B19 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B83AC1AB297A41C0000D3B19 /* cup_saucer_set.usdz */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B83AC1A9297A4186000D3B19 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B83AC1AD297A41D4000D3B19 /* CupEntity.swift */,
+				B83AC1AF297A45A2000D3B19 /* ResourceLoader.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B83AC1AA297A41A8000D3B19 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B83AC1A6297A3DD7000D3B19 /* TapMakesCupApp.swift */,
+				B83AC1982979BD98000D3B19 /* ContentView.swift */,
+				B8B09B712995EB6500C65C9D /* ViewModel.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B83AC1AC297A41C0000D3B19 /* cup_saucer_set.usdz in Resources */,
 				B83AC1A02979BD9A000D3B19 /* Preview Assets.xcassets in Resources */,
 				B83AC19D2979BD9A000D3B19 /* Assets.xcassets in Resources */,
 			);
@@ -140,9 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8B09B722995EB6500C65C9D /* ViewModel.swift in Sources */,
+				B83AC1AE297A41D4000D3B19 /* CupEntity.swift in Sources */,
+				B83AC1A7297A3DD7000D3B19 /* TapMakesCupApp.swift in Sources */,
+				B83AC1B0297A45A2000D3B19 /* ResourceLoader.swift in Sources */,
 				B83AC1992979BD98000D3B19 /* ContentView.swift in Sources */,
-				B83AC1972979BD98000D3B19 /* AppDelegate.swift in Sources */,
-				B83AC19B2979BD98000D3B19 /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
